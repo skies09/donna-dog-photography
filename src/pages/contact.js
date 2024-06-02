@@ -119,7 +119,7 @@ export default function Contact() {
 
 			<div className="pt-2 lg:pt-8 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto">
 				<motion.div
-					className="w-10/12 lg:w-1/2 flex justify-center items-start bg-colorThree h-80 lg:h-96"
+					className="w-10/12 flex justify-center items-start bg-colorThree h-80 lg:h-96"
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
@@ -131,36 +131,7 @@ export default function Contact() {
 						</p>
 					)}
 				</motion.div>
-				<motion.div
-					className="w-1/2 flex flex-col justify-center items-center h-44 lg:h-96 pt-16 lg:pt-0"
-					initial={{ opacity: 0 }}
-					whileInView={{ opacity: 1 }}
-					transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
-				>
-					<div className="relative flex flex-col justify-start items-start border-b border-dotted border-colorFour">
-						<div className="flex flex-row items-center mb-4">
-							<FontAwesomeIcon
-								icon={faPhone}
-								size="lg"
-								className="text-colorFour"
-							/>
-							<span className="ml-4 text-md lg:text-2xl text-colorFour tracking-wider">
-								07950981097
-							</span>
-						</div>
-						<div className="flex flex-row items-center mb-6">
-							<FontAwesomeIcon
-								icon={faEnvelope}
-								size="lg"
-								className="text-colorFour"
-							/>
-							<span className="ml-4 text-md lg:text-2xl text-colorFour tracking-wider">
-								donna.pet.photography@hotmail.com
-							</span>
-						</div>
-					</div>
-					<SocialLinks />
-				</motion.div>
+			
 			</div>
 		</div>
 	);
