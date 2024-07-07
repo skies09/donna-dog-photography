@@ -14,7 +14,7 @@ export default function Intro() {
 				transition={{ duration: 2 }}
 			>
 				<img
-					className="shadow-shadow-colorThree w-1/12 mt-16 lg:mt-0 h-auto border-colorOne rounded-full"
+					className="shadow-shadow-colorThree w-1/3 lg:w-1/12 h-auto border-colorOne rounded-full"
 					src={`../../assets/images/DDPLogo.png`}
 					alt="Project"
 				/>

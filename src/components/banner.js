@@ -5,7 +5,7 @@ import SocialLinks from "../components/socialLinks";
 
 export default function Banner() {
 	return (
-		<div className="w-screen overflow-hidden h-10 md:h-12 bg-colorFour items-center justify-start flex pl-4">
+		<div className="w-screen overflow-hidden h-10 md:h-12 bg-colorFour items-center justify-center md:justify-start flex md:pl-4">
 			<div className="relative flex flex-row justify-center items-center">
 				<div className="flex flex-row items-center">
 					<FontAwesomeIcon
