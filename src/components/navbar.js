@@ -17,7 +17,7 @@ export default function Navbar() {
 				</li>
 
 				<a href="#contact">
-					<li className="font-satisfy text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
+					<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
 						Contact
 					</li>
 				</a>
