@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Navbar from "../components/navbar";
 
 export default function Intro() {
 	return (
@@ -12,10 +13,16 @@ export default function Intro() {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 2 }}
 			>
-				<p className="text-colorOne text-2xl md:text-5xl lg:text-8xl font-greatVibes font-semibold tracking-wider">
+				<img
+					className="shadow-shadow-colorThree w-1/12 mt-16 lg:mt-0 h-auto border-colorOne rounded-full"
+					src={`../../assets/images/DDPLogo.png`}
+					alt="Project"
+				/>
+				<p className="text-colorOne text-2xl md:text-5xl lg:text-8xl font-greatVibes font-semibold tracking-wider mt-8">
 					Donna's Dog Photography
 				</p>
 			</motion.div>
+			<Navbar />
 		</div>
 	);
 }
