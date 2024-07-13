@@ -1,28 +1,23 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Intro from "./pages/intro";
 import Navbar from "./components/navbar";
-import Contact from "./pages/contact";
+import About from "./pages/about";
 import Banner from "./components/banner";
-
-// <Navbar />
-// <div>
-// <Banner />
-
-// <div className="relative w-full h-screen snap-mandatory snap-y -mt-8">
-// 	<Intro />
-// 	<Contact />
-// </div>
-// </div>
+import Contact from "./pages/contact";
+import Gallery from "./pages/gallery";
+import Home from "./pages/home";
+import Services from "./pages/services";
 
 export default function App() {
 	return (
 		<Router>
 			<Banner />
 			<Routes>
-				<Route exact path="/" element={<Intro />} />
-
+				<Route exact path="/" element={<Home />} />
+				<Route path="/gallery" element={<Gallery />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/services" element={<Services />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 		</Router>

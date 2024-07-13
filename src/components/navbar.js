@@ -5,18 +5,33 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<div className="h-20 items-center justify-center flex mt-4">
+		<div className="h-20 items-center justify-center flex mt-0 lg:mt-2">
 			<ul className="flex flex-row">
-				<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
+				<Link
+					to="/gallery"
+					className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8"
+				>
 					Gallery
-				</li>
-				<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
+				</Link>
+
+				<Link
+					to="/about"
+					className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8"
+				>
 					About
-				</li>
-				<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
+				</Link>
+				<Link
+					to="/services"
+					className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8"
+				>
 					Services
-				</li>
-				<Link to="/contact">Contact</Link>
+				</Link>
+				<Link
+					to="/contact"
+					className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8"
+				>
+					Contact
+				</Link>
 			</ul>
 		</div>
 	);
