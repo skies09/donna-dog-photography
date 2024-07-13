@@ -1,4 +1,5 @@
 // import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // navbar links
 
@@ -15,12 +16,7 @@ export default function Navbar() {
 				<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
 					Services
 				</li>
-
-				<a href="#contact">
-					<li className="font-serif text-md lg:text-2xl text-colorOne mx-4 lg:mx-8">
-						Contact
-					</li>
-				</a>
+				<Link to="/contact">Contact</Link>
 			</ul>
 		</div>
 	);
