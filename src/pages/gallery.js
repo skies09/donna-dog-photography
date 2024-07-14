@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 
 export default function Gallery() {
 	return (
-		<div className="w-screen overflow-hidden h-[80vh] bg-colorThree">
-			Gallery
-		</div>
+		<div className="w-screen overflow-hidden h-[80vh] bg-colorThree"></div>
 	);
 }
