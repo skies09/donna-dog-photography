@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<div className="h-20 items-center justify-center flex mt-0 lg:mt-2">
+		<div className="h-10 lg:h-16 items-center justify-center flex mb-3 lg:mb-6">
 			<ul className="flex flex-row">
 				<Link
 					to="/gallery"

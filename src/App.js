@@ -7,12 +7,14 @@ import Banner from "./components/banner";
 import Contact from "./pages/contact";
 import Gallery from "./pages/gallery";
 import Home from "./pages/home";
+import Header from "./components/header";
 import Services from "./pages/services";
 
 export default function App() {
 	return (
 		<Router>
 			<Banner />
+			<Header />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/gallery" element={<Gallery />} />
