@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 
 export default function Header() {
@@ -11,11 +12,17 @@ export default function Header() {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 2 }}
 				>
-					<img
-						className="shadow-shadow-colorThree w-1/4 lg:w-1/12 h-auto border-colorOne rounded-full"
-						src={`../../assets/images/DDPLogo.png`}
-						alt="Project"
-					/>
+					<Link
+						to="/"
+						className="flex justify-center items-center w-1/4 lg:w-1/12"
+					>
+						<img
+							className="shadow-shadow-colorThree h-auto border-colorOne rounded-full"
+							src={`../../assets/images/DDPLogo.png`}
+							alt="Project"
+						/>
+					</Link>
+
 					<p className="text-colorOne text-2xl md:text-5xl lg:text-4xl font-greatVibes font-semibold tracking-wider mt-3 lg:mt-6">
 						Donna's Dog Photography
 					</p>
