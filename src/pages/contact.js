@@ -46,7 +46,7 @@ export default function Contact() {
 		};
 
 		const handleSubmit = (values, { setSubmitting }) => {
-            console.log(values, 'append dog photography onto the message')
+			console.log(values, "append dog photography onto the message");
 			sendEmail(values);
 			setSubmitting(false);
 		};
@@ -104,7 +104,7 @@ export default function Contact() {
 
 	return (
 		<div
-			className="w-screen overflow-hidden h-screen bg-colorThree"
+			className="w-screen overflow-hidden h-[80vh] bg-colorThree"
 			ref={containerRef}
 			id="contact"
 		>
@@ -112,7 +112,7 @@ export default function Contact() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
-				className="pt-12 lg:pt-16 text-2xl lg:text-4xl text-colorFour font-bold flex justify-center text-center font-serif"
+				className="pt-8 lg:pt-4 text-2xl lg:text-4xl text-colorFour font-bold flex justify-center text-center font-serif"
 			>
 				Get in touch
 			</motion.div>
@@ -131,7 +131,6 @@ export default function Contact() {
 						</p>
 					)}
 				</motion.div>
-			
 			</div>
 		</div>
 	);
