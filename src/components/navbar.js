@@ -5,11 +5,11 @@ export default function Navbar() {
 	const location = useLocation();
 
 	return (
-		<div className="h-10 lg:h-16 items-center justify-center flex mb-3 lg:mb-6">
+		<div className="h-10 lg:h-16 items-center justify-center flex mb-3 lg:mb-6 mx-auto">
 			<ul className="flex flex-row">
 				<Link
 					to="/"
-					className={`font-serif text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 hidden md:flex ${
 						location.pathname === "/"
 							? "border-b-2 border-colorTwo"
 							: ""
@@ -19,7 +19,7 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/gallery"
-					className={`font-serif text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
 						location.pathname === "/gallery"
 							? "border-b-2 border-colorTwo"
 							: ""
@@ -29,7 +29,7 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/about"
-					className={`font-serif text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
 						location.pathname === "/about"
 							? "border-b-2 border-colorTwo"
 							: ""
@@ -39,7 +39,7 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/services"
-					className={`font-serif text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
 						location.pathname === "/services"
 							? "border-b-2 border-colorTwo"
 							: ""
@@ -49,7 +49,7 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/contact"
-					className={`font-serif text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
 						location.pathname === "/contact"
 							? "border-b-2 border-colorTwo"
 							: ""
