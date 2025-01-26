@@ -4,11 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-	"IMG_0930.jpeg",
-	"IMG_0500.jpeg",
+	"IMG_1.jpeg",
+	"IMG_2.jpeg",
 	"IMG_0472.jpeg",
 	"IMG_0231.jpeg",
 	"IMG_0228.jpeg",
+	"IMG_0472.jpeg",
+	"IMG_0500.jpeg",
+	"IMG_0930.jpeg",
 ];
 
 const ImageCarousel = () => {
@@ -38,42 +41,42 @@ const ImageCarousel = () => {
 	};
 
 	return (
-		<>
+		<div>
 			{/* Mobile Carousel */}
-			<div className="slider-container w-11/12 mx-auto lg:hidden pt-10">
+			<div className="slider-container w-full mx-auto lg:hidden pt-10">
 				<Slider {...mobileSettings}>
 					{images.map((image, index) => (
 						<div
-							className="w-full flex-shrink-0 justify-center items-center flex-row"
+							className="w-full flex-shrink-0 justify-center items-center flex-row px-1"
 							key={index}
 						>
 							<img
 								src={`../../assets/photos/${image}`}
 								alt={`Dog ${index + 1}`}
-								className="w-80 h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
+								className="w-full h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
 							/>
 						</div>
 					))}
 				</Slider>
 			</div>
 			{/* Desktop Carousel */}
-			<div className="slider-container w-4/5 mx-auto hidden lg:block pt-4">
+			<div className="slider-container w-full mx-auto hidden lg:block pt-4">
 				<Slider {...desktopSettings}>
 					{images.map((image, index) => (
 						<div
-							className="w-full flex-shrink-0 justify-center items-center flex-row"
+							className="w-full flex-shrink-0 justify-center items-center flex-row px-1"
 							key={index}
 						>
 							<img
 								src={`../../assets/photos/${image}`}
 								alt={`Dog ${index + 1}`}
-								className="w-80 h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
+								className="w-full h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
 							/>
 						</div>
 					))}
 				</Slider>
 			</div>
-		</>
+		</div>
 	);
 };
 

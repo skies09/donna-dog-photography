@@ -5,7 +5,7 @@ export default function Navbar() {
 	const location = useLocation();
 
 	return (
-		<div className="h-10 lg:h-16 items-center justify-center flex mb-3 lg:mb-6 mx-auto">
+		<div className="h-10 lg:h-16 items-center justify-center flex pb-3 mx-auto">
 			<ul className="flex flex-row">
 				<Link
 					to="/"
