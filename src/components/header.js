@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 
 export default function Header() {
 	return (
-		<div className="relative w-full -mt-8 border-b-4 border-colorTwo">
+		<div className="relative w-full -mt-8">
 			<div className="w-screen overflow-hidden h-auto bg-colorThree mt-8 ">
 				<motion.div
 					className="relative flex flex-col justify-center items-center pt-8 w-full mx-auto"
@@ -28,6 +28,9 @@ export default function Header() {
 					</p>
 				</motion.div>
 				<Navbar />
+			</div>
+			<div className="flex justify-center bg-colorThree">
+				<div className="w-11/12 border-b-4 border-colorTwo"></div>
 			</div>
 		</div>
 	);
