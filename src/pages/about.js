@@ -13,7 +13,7 @@ export default function About() {
 					className="w-full lg:w-1/2 mb-8 lg:mb-0"
 				>
 					<img
-						src="../../assets/images/img7.jpg"
+						src="../../assets/images/me.jpg"
 						alt="Photographer's portrait"
 						className="w-full h-auto rounded-xl shadow-lg"
 					/>
