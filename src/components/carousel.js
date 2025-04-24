@@ -21,7 +21,7 @@ const ImageCarousel = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		speed: 8000,
+		speed: 9000,
 		autoplaySpeed: 300,
 		cssEase: "linear",
 		pauseOnHover: true,
@@ -33,7 +33,7 @@ const ImageCarousel = () => {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-		speed: 8000,
+		speed: 9000,
 		autoplaySpeed: 300,
 		cssEase: "linear",
 		pauseOnHover: true,
@@ -53,14 +53,14 @@ const ImageCarousel = () => {
 							<img
 								src={`../../assets/photos/${image}`}
 								alt={`Dog ${index + 1}`}
-								className="w-full h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
+								className="w-full h-[30rem] mx-auto object-cover border-2 border-colorFive rounded-3xl bg-center"
 							/>
 						</div>
 					))}
 				</Slider>
 			</div>
 			{/* Desktop Carousel */}
-			<div className="slider-container w-full mx-auto hidden lg:block pt-4">
+			<div className="slider-container w-full mx-auto hidden lg:block pt-6">
 				<Slider {...desktopSettings}>
 					{images.map((image, index) => (
 						<div
@@ -70,7 +70,7 @@ const ImageCarousel = () => {
 							<img
 								src={`../../assets/photos/${image}`}
 								alt={`Dog ${index + 1}`}
-								className="w-full h-80 mx-auto object-cover border-2 border-colorFour rounded-lg"
+								className="w-full h-[35rem] mx-auto object-cover border-2 border-colorFive rounded-3xl bg-center"
 							/>
 						</div>
 					))}

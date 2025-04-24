@@ -114,7 +114,8 @@ export default function Contact() {
 				transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
 				className="pt-8 lg:pt-4 text-2xl lg:text-4xl text-colorFour font-bold flex justify-center text-center font-serif"
 			>
-				Get in touch
+				Ready to capture your dog's best moments? <br />
+				Book a session today!
 			</motion.div>
 
 			<div className="pt-2 lg:pt-8 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto">
