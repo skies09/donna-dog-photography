@@ -191,8 +191,8 @@ export default function Contact() {
 									the moment.
 								</h2>
 								<p className="text-lg text-colorFour font-sans font-medium">
-									Please check back later. Thank you for your
-									understanding.
+									Please check back later. <br />
+									Thank you for your understanding.
 								</p>
 							</div>
 						</div>
