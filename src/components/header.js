@@ -18,7 +18,7 @@ export default function Header() {
 					>
 						<img
 							className="shadow-shadow-colorThree h-auto border-colorOne rounded-full"
-							src={`../../assets/images/DDPLogo.png`}
+							src={`../../assets/images/DDPLogo1.png`}
 							alt="Project"
 						/>
 					</Link>
