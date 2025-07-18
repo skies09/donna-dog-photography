@@ -184,7 +184,7 @@ export default function Contact() {
 					</Form>
 
 					{OOS && (
-						<div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80">
+						<div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-80">
 							<div className="bg-[#ffffff] p-6 rounded-xl shadow-md max-w-md text-center relative z-10">
 								<h2 className="text-2xl font-semibold mb-2 text-colorFour font-sans">
 									Sorry, there are no sessions available at

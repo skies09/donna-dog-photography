@@ -61,7 +61,7 @@ const ImageCarousel = () => {
 				</Slider>
 			</div>
 			{/* Desktop Carousel */}
-			<div className="slider-container w-full mx-auto hidden lg:block py-6">
+			<div className="slider-container w-full mx-auto hidden lg:block py-12">
 				<Slider {...desktopSettings}>
 					{images.map((image, index) => (
 						<div
@@ -71,7 +71,7 @@ const ImageCarousel = () => {
 							<img
 								src={`../../assets/images/${image}`}
 								alt={`Dog ${index + 1}`}
-								className="w-auto h-[25rem] mx-auto object-cover border-2 border-colorFive rounded-3xl bg-center"
+								className="w-auto h-[30rem] mx-auto object-cover border-2 border-colorFive rounded-3xl bg-center"
 							/>
 						</div>
 					))}

@@ -11,16 +11,18 @@ import Services from "./pages/services";
 
 export default function App() {
 	return (
-		<Router>
-			<Banner />
-			<Header />
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/gallery" element={<Gallery />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/services" element={<Services />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
-		</Router>
+		<div className="bg-colorThree h-screen overflow-auto">
+			<Router>
+				<Banner />
+				<Header />
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/gallery" element={<Gallery />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/services" element={<Services />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Router>
+		</div>
 	);
 }

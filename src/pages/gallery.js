@@ -18,7 +18,7 @@ export default function Gallery() {
 						size="sm"
 						className="text-colorFive pr-4"
 					/>
-					<h2 className="text-3xl font-bold text-colorTwo mb-2 font-greatVibes">
+					<h2 className="text-4xl font-bold text-colorTwo mb-2 font-greatVibes">
 						Moz
 					</h2>
 					<FontAwesomeIcon
@@ -51,7 +51,9 @@ export default function Gallery() {
 						key={i}
 						src={src}
 						alt={`Moz ${i + 1}`}
-						className="w-auto h-44 object-cover shadow-lg mx-auto border-2 border-colorFive rounded-3xl bg-center"
+						className={`w-auto h-44 object-cover shadow-lg mx-auto border-2 border-colorFive rounded-3xl bg-center ${
+							i === 2 ? "hidden sm:block" : ""
+						}`}
 						whileHover={{ scale: 1.03 }}
 						transition={{ type: "spring", stiffness: 200 }}
 					/>
@@ -71,7 +73,7 @@ export default function Gallery() {
 						size="sm"
 						className="text-colorFive pr-4"
 					/>
-					<h2 className="text-3xl font-bold text-colorTwo mb-2 font-greatVibes">
+					<h2 className="text-4xl font-bold text-colorTwo mb-2 font-greatVibes">
 						Neo
 					</h2>
 					<FontAwesomeIcon
@@ -105,7 +107,9 @@ export default function Gallery() {
 						key={i}
 						src={src}
 						alt={`Neo ${i + 1}`}
-						className="w-auto h-44 object-cover shadow-lg mx-auto border-2 border-colorFive rounded-3xl bg-center"
+						className={`w-auto h-44 object-cover shadow-lg mx-auto border-2 border-colorFive rounded-3xl bg-center ${
+							i === 2 ? "hidden sm:block" : ""
+						}`}
 						whileHover={{ scale: 1.03 }}
 						transition={{ type: "spring", stiffness: 200 }}
 					/>
