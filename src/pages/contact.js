@@ -212,6 +212,7 @@ export default function Contact() {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
+				viewport={{ once: true }}
 				className={`pt-8 lg:pt-4 text-2xl lg:text-4xl text-colorFour font-bold flex justify-center text-center font-serif ${
 					OOS ? "blur-sm" : ""
 				}`}
@@ -225,6 +226,7 @@ export default function Contact() {
 					className="w-10/12 flex justify-center items-start bg-colorThree h-80 lg:h-96"
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
 					transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
 				>
 					{!formSubmitted && <ContactForm />}

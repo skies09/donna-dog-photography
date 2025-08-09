@@ -34,6 +34,7 @@ export default function Services() {
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
+				viewport={{ once: true }}
 				className="text-4xl font-bold text-center mb-6 font-greatVibes text-colorOne"
 			>
 				Picture-Perfect Packages for Every Pup!
@@ -42,9 +43,10 @@ export default function Services() {
 			{services.map((service, index) => (
 				<motion.div
 					key={index}
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 1, delay: index * 0.2 }}
+					initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 1, delay: index * 0.4 }}
+					viewport={{ once: true }}
 					className={`flex flex-col lg:flex-row ${
 						index % 2 !== 0 ? "lg:flex-row-reverse" : ""
 					} items-center gap-10`}
