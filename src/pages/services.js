@@ -45,7 +45,7 @@ export default function Services() {
 					key={index}
 					initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 1, delay: index * 0.4 }}
+					transition={{ duration: 1, delay: index * 0.2 }}
 					viewport={{ once: true }}
 					className={`flex flex-col lg:flex-row ${
 						index % 2 !== 0 ? "lg:flex-row-reverse" : ""
