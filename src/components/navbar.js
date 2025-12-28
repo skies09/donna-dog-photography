@@ -9,9 +9,9 @@ export default function Navbar() {
 			<ul className="flex flex-row">
 				<Link
 					to="/"
-					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 hidden md:flex ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 hidden md:flex transition-all duration-300 hover:text-colorFour ${
 						location.pathname === "/"
-							? "border-b-2 border-colorTwo"
+							? "border-b-2 border-colorFour"
 							: ""
 					}`}
 				>
@@ -19,9 +19,9 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/gallery"
-					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 transition-all duration-300 hover:text-colorFour ${
 						location.pathname === "/gallery"
-							? "border-b-2 border-colorTwo"
+							? "border-b-2 border-colorFour"
 							: ""
 					}`}
 				>
@@ -29,9 +29,9 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/about"
-					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 transition-all duration-300 hover:text-colorFour ${
 						location.pathname === "/about"
-							? "border-b-2 border-colorTwo"
+							? "border-b-2 border-colorFour"
 							: ""
 					}`}
 				>
@@ -39,9 +39,9 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/services"
-					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 transition-all duration-300 hover:text-colorFour ${
 						location.pathname === "/services"
-							? "border-b-2 border-colorTwo"
+							? "border-b-2 border-colorFour"
 							: ""
 					}`}
 				>
@@ -49,9 +49,9 @@ export default function Navbar() {
 				</Link>
 				<Link
 					to="/contact"
-					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 ${
+					className={`font-serif text-sm md:text-md lg:text-xl text-colorOne mx-4 lg:mx-8 transition-all duration-300 hover:text-colorFour ${
 						location.pathname === "/contact"
-							? "border-b-2 border-colorTwo"
+							? "border-b-2 border-colorFour"
 							: ""
 					}`}
 				>

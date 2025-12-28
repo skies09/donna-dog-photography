@@ -15,7 +15,7 @@ export default function About() {
 					<img
 						src="../../assets/images/me.jpg"
 						alt="Photographer's portrait"
-						className="w-full h-auto rounded-xl shadow-lg"
+						className="w-full h-auto rounded-xl shadow-shadow-elegant border-2 border-colorFive/30"
 					/>
 				</motion.div>
 

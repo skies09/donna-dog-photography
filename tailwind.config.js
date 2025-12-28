@@ -5,11 +5,13 @@ module.exports = {
   ],
 	theme: {
 		colors: {
-			colorOne: "#545B6C",
-			colorTwo: "#AD9BAC",
-			colorThree: "#EEEEEE",
-			colorFour: "#5C9CBC",
-			colorFive: "#C4C4E4",
+			colorOne: "#4A5568", // Soft slate blue-gray for elegant text
+			colorTwo: "#B8A9D9", // Soft lavender purple for accents
+			colorThree: "#F8F6F9", // Soft cream-ivory for backgrounds
+			colorFour: "#9BB5D1", // Soft periwinkle blue for primary actions
+			colorFive: "#D4C5E8", // Soft lilac for secondary accents
+			buttonBlue: "#6B8FA8", // Darker blue for button backgrounds
+			buttonPurple: "#8B7AA8", // Darker purple for button backgrounds
 		},
 		fontFamily: {
 			sans: ["Open Sans", "sans-serif"],
@@ -24,9 +26,10 @@ module.exports = {
 			},
 			boxShadow: {
 				"shadow-colorOne":
-					"0 0 5px #00A8E8, 0 0 10px #00A8E8, 0 0 20px #00A8E8, 0 0 40px #00A8E8",
-					"shadow-colorTwo":
-					"0 0 5px #003459, 0 0 10px #003459, 0 0 20px #003459, 0 0 40px #003459",
+					"0 0 5px #9BB5D1, 0 0 10px #9BB5D1, 0 0 20px #9BB5D1, 0 0 40px #9BB5D1",
+				"shadow-colorTwo":
+					"0 0 5px #B8A9D9, 0 0 10px #B8A9D9, 0 0 20px #B8A9D9, 0 0 40px #B8A9D9",
+				"shadow-elegant": "0 4px 20px rgba(184, 169, 217, 0.15), 0 2px 8px rgba(155, 181, 209, 0.1)",
 			},
 		
 		},

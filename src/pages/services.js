@@ -56,7 +56,7 @@ export default function Services() {
 						<img
 							src={service.image}
 							alt={service.title}
-							className="w-full h-auto object-cover rounded-2xl shadow-lg"
+							className="w-full h-auto object-cover rounded-2xl shadow-shadow-elegant border-2 border-colorFive/30"
 						/>
 					</div>
 
@@ -68,7 +68,7 @@ export default function Services() {
 						<p className="text-lg lg:text-xl mb-4 font-mono text-colorOne">
 							{service.description}
 						</p>
-						<p className="text-xl font-semibold font-serif text-colorTwo">
+						<p className="text-xl font-semibold font-serif text-colorFour">
 							{service.price}
 						</p>
 					</div>

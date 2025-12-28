@@ -17,7 +17,7 @@ export default function Header() {
 						className="flex justify-center items-center w-1/4 lg:w-1/12"
 					>
 						<img
-							className="shadow-shadow-colorThree h-auto border-colorOne rounded-full"
+							className="shadow-shadow-elegant h-auto border-2 border-colorTwo/30 rounded-full"
 							src={`../../assets/images/DDPLogo1.png`}
 							alt="Project"
 						/>
@@ -29,8 +29,8 @@ export default function Header() {
 				</motion.div>
 				<Navbar />
 			</div>
-			<div className="flex justify-center bg-colorThree">
-				<div className="w-11/12 border-b-4 border-colorTwo"></div>
+			<div className="flex justify-center bg-colorThree max-w-[79%] mx-auto">
+				<div className="w-11/12 border-b-4 border-colorTwo/40"></div>
 			</div>
 		</div>
 	);

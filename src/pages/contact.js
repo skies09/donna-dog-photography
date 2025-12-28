@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import * as Yup from "yup";
-import SocialLinks from "../components/socialLinks";
+// import SocialLinks from "../components/socialLinks";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -12,6 +12,7 @@ export default function Contact() {
 	const OOS = true; // Out of service
 	const [formSubmitted, setFormSubmitted] = useState(false);
 	const [loading, setLoading] = useState(false);
+	console.log(loading);
 
 	function sendEmail(values) {
 		emailjs
@@ -81,7 +82,7 @@ export default function Contact() {
 										Name
 									</label>
 									<Field
-										className="w-5/6 h-10 rounded-xl my-2 pl-2 font-serif mx-auto"
+										className="w-5/6 h-10 rounded-xl my-2 pl-4 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all"
 										type="text"
 										id="user_name"
 										name="user_name"
@@ -92,7 +93,7 @@ export default function Contact() {
 										Dog Name
 									</label>
 									<Field
-										className="w-5/6 h-10 rounded-xl my-2 pl-2 font-serif mx-auto"
+										className="w-5/6 h-10 rounded-xl my-2 pl-4 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all"
 										type="text"
 										id="dog_name"
 										name="dog_name"
@@ -105,7 +106,7 @@ export default function Contact() {
 									Email
 								</label>
 								<Field
-									className="w-5/6 h-10 rounded-xl my-2 pl-2 font-serif mx-auto"
+									className="w-5/6 h-10 rounded-xl my-2 pl-4 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all"
 									type="email"
 									id="user_email"
 									name="user_email"
@@ -122,7 +123,7 @@ export default function Contact() {
 									Mobile
 								</label>
 								<Field
-									className="w-5/6 h-10 rounded-xl my-2 pl-2 font-serif mx-auto"
+									className="w-5/6 h-10 rounded-xl my-2 pl-4 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all"
 									type="text"
 									id="user_mobile"
 									name="user_mobile"
@@ -141,7 +142,7 @@ export default function Contact() {
 								<Field
 									as="select"
 									name="service"
-									className="w-5/6 h-10 rounded-xl my-2 pl-2 font-serif mx-auto"
+									className="w-5/6 h-10 rounded-xl my-2 pl-4 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all"
 								>
 									<option value="">Select a service</option>
 									<option value="private_photo_shoot">
@@ -167,7 +168,7 @@ export default function Contact() {
 								</label>
 								<Field
 									as="textarea"
-									className="w-5/6 h-24 rounded-xl my-2 pl-2 font-serif mx-auto"
+									className="w-5/6 h-24 rounded-xl my-2 pl-4 pt-2 font-serif mx-auto border border-colorFive/50 focus:border-colorFour focus:ring-2 focus:ring-colorFour/20 focus:outline-none transition-all resize-none"
 									id="message"
 									name="message"
 									rows="3"
@@ -175,7 +176,7 @@ export default function Contact() {
 							</div>
 
 							<button
-								className="flex justify-center items-center mx-auto px-4 py-2 bg-colorThree text-colorFour border border-colorFour rounded-xl hover:bg-colorFive hover:text-colorOne hover:border-2 hover:border-solid hover:border-colorOne"
+								className="flex justify-center items-center mx-auto px-6 py-3 bg-gradient-to-r from-colorThree to-white border-2 border-colorFour/40 text-buttonBlue rounded-xl shadow-shadow-elegant hover:bg-gradient-to-r hover:from-white hover:to-colorThree hover:border-colorFour hover:shadow-lg transition-all duration-300 font-bold"
 								type="submit"
 							>
 								Send
@@ -184,13 +185,13 @@ export default function Contact() {
 					</Form>
 
 					{OOS && (
-						<div className="absolute inset-0 flex items-start justify-center bg-black bg-opacity-80">
-							<div className="bg-[#ffffff] p-6 rounded-xl shadow-md max-w-md text-center relative z-10">
-								<h2 className="text-2xl font-semibold mb-2 text-colorFour font-sans">
+						<div className="absolute inset-0 flex items-start justify-center bg-black/60 backdrop-blur-sm">
+							<div className="bg-gradient-to-br from-colorThree to-white p-8 rounded-2xl shadow-shadow-elegant max-w-md text-center relative z-10 border border-colorFive/30">
+								<h2 className="text-2xl font-semibold mb-3 text-colorFour font-sans">
 									Sorry, there are no sessions available at
 									the moment.
 								</h2>
-								<p className="text-lg text-colorFour font-sans font-medium">
+								<p className="text-lg text-colorOne font-sans font-medium">
 									Please check back later. <br />
 									Thank you for your understanding.
 								</p>
