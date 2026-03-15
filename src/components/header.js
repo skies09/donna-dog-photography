@@ -18,7 +18,7 @@ export default function Header() {
 						aria-label="Donna's Dog Photography – Home"
 					>
 						<img
-							className="w-20 h-20 md:w-24 md:h-24 object-contain rounded-full border-2 border-colorFive shadow-shadow-elegant"
+							className="w-20 h-20 md:w-24 md:h-24 object-contain rounded-full border-2 border-colorTwo shadow-shadow-elegant"
 							src={`../../assets/images/DDPLogo2.png`}
 							alt="Donna's Dog Photography logo"
 						/>
