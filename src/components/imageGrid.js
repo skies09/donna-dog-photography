@@ -39,7 +39,7 @@ const mobileImages = [
 
 const ImageGrid = () => {
 	return (
-		<div className="w-full bg-colorThree py-8 lg:py-16 px-4 lg:px-8">
+		<div className="w-full bg-colorThree py-8 lg:pt-16 px-4 lg:px-8">
 			{/* Mobile Grid - Simple 2 column layout */}
 			<div className="lg:hidden grid grid-cols-2 gap-3 max-w-2xl mx-auto">
 				{mobileImages.map((image, index) => (

@@ -5,17 +5,19 @@ module.exports = {
   ],
 	theme: {
 		colors: {
-			colorOne: "#4A5568", // Soft slate blue-gray for elegant text
-			colorTwo: "#B8A9D9", // Soft lavender purple for accents
-			colorThree: "#F8F6F9", // Soft cream-ivory for backgrounds
-			colorFour: "#9BB5D1", // Soft periwinkle blue for primary actions
-			colorFive: "#D4C5E8", // Soft lilac for secondary accents
-			buttonBlue: "#6B8FA8", // Darker blue for button backgrounds
-			buttonPurple: "#8B7AA8", // Darker purple for button backgrounds
+			colorOne: "#374151",   // Professional slate for text
+			colorTwo: "#7C6B9E",   // Refined lavender accent
+			colorThree: "#F0FFFF", // Background (azure/cyan-tinted white)
+			colorFour: "#5B7A9E",  // Muted blue for links & CTAs
+			colorFive: "#E8E4F0",  // Light border/secondary
+			buttonBlue: "#4A6B8A",
+			buttonPurple: "#6B5B95",
+			white: "#ffffff",
+			black: "#111111",
 		},
 		fontFamily: {
-			sans: ["Open Sans", "sans-serif"],
-			serif: ["Playfair Display", "serif"],
+			sans: ["Open Sans", "system-ui", "sans-serif"],
+			serif: ["Playfair Display", "Georgia", "serif"],
 			mono: ["Montserrat", "sans-serif"],
 			satisfy: ["Satisfy", "cursive"],
 			greatVibes: ["Great Vibes", "cursive"],
@@ -26,12 +28,16 @@ module.exports = {
 			},
 			boxShadow: {
 				"shadow-colorOne":
-					"0 0 5px #9BB5D1, 0 0 10px #9BB5D1, 0 0 20px #9BB5D1, 0 0 40px #9BB5D1",
+					"0 0 5px #5B7A9E, 0 0 10px rgba(91, 122, 158, 0.15)",
 				"shadow-colorTwo":
-					"0 0 5px #B8A9D9, 0 0 10px #B8A9D9, 0 0 20px #B8A9D9, 0 0 40px #B8A9D9",
-				"shadow-elegant": "0 4px 20px rgba(184, 169, 217, 0.15), 0 2px 8px rgba(155, 181, 209, 0.1)",
+					"0 0 5px #7C6B9E, 0 0 10px rgba(124, 107, 158, 0.15)",
+				"shadow-elegant": "0 4px 24px rgba(55, 65, 81, 0.08), 0 2px 8px rgba(55, 65, 81, 0.04)",
+				"shadow-card": "0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(55, 65, 81, 0.06)",
 			},
-		
+			borderRadius: {
+				"xl": "1rem",
+				"2xl": "1.25rem",
+			},
 		},
 	},
   plugins: [],

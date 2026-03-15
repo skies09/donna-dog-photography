@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Navbar from "../components/navbar";
+import Navbar from "./navbar";
 
 export default function Header() {
 	return (
-		<div className="relative w-full -mt-8">
-			<div className="w-screen overflow-hidden h-auto bg-colorThree mt-8 ">
+		<header className="relative w-full bg-colorThree border-b border-colorFive/50">
+			<div className="max-w-6xl mx-auto px-4 pt-8 pb-2">
 				<motion.div
-					className="relative flex flex-col justify-center items-center pt-8 w-full mx-auto"
+					className="flex flex-col items-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ duration: 2 }}
+					transition={{ duration: 0.8 }}
 				>
 					<Link
 						to="/"
-						className="flex justify-center items-center w-1/4 lg:w-1/12"
+						className="flex flex-col items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-colorFour focus-visible:ring-offset-2 rounded-full"
+						aria-label="Donna's Dog Photography – Home"
 					>
 						<img
-							className="shadow-shadow-elegant h-auto border-2 border-colorTwo/30 rounded-full"
-							src={`../../assets/images/DDPLogo1.png`}
-							alt="Project"
+							className="w-20 h-20 md:w-24 md:h-24 object-contain rounded-full border-2 border-colorFive shadow-shadow-elegant"
+							src={`../../assets/images/DDPLogo2.png`}
+							alt="Donna's Dog Photography logo"
 						/>
+						<span className="mt-3 text-xl md:text-2xl lg:text-3xl font-greatVibes text-colorOne font-semibold tracking-wide">
+							Donna's Dog Photography
+						</span>
 					</Link>
-
-					<p className="text-colorOne text-2xl md:text-5xl lg:text-4xl font-greatVibes font-semibold tracking-wider mt-3 lg:mt-6">
-						Donna's Dog Photography
+					<p className="mt-1 text-sm text-colorOne/80 font-sans font-medium tracking-wide text-center max-w-md">
+						Capturing personality, one paw at a time.
 					</p>
 				</motion.div>
 				<Navbar />
 			</div>
-			<div className="flex justify-center bg-colorThree max-w-[79%] mx-auto">
-				<div className="w-11/12 border-b-4 border-colorTwo/40"></div>
-			</div>
-		</div>
+		</header>
 	);
 }

@@ -2,78 +2,86 @@ import { motion } from "framer-motion";
 
 const services = [
 	{
-		title: "Private Studio Photoshoot",
+		title: "Private studio session",
 		price: "£250",
 		image: "/assets/images/studio.jpg",
 		description:
-			"A relaxed indoor session with professional lighting. Perfect for elegant portraits and close-up shots in a controlled, cozy space.",
+			"A relaxed indoor session with professional lighting. Ideal for elegant portraits and close-ups in a controlled, comfortable environment.",
 	},
 	{
-		title: "Outdoor Adventure Session",
+		title: "Outdoor adventure session",
 		price: "£300",
 		image: "/assets/images/outdoor.jpg",
 		description:
-			"Capture your dog’s personality in natural settings like parks or beaches. Ideal for active dogs who love to explore!",
+			"Natural-light sessions in parks, woods or by the coast. Perfect for active dogs who love to run and play while we capture their character.",
 	},
 	{
-		title: "Birthday & Themed Shoots",
-		price: "Starting at £200",
+		title: "Birthday & themed shoots",
+		price: "From £200",
 		image: "/assets/images/birthday.jpg",
 		description:
-			"Celebrate milestones with props, costumes, or custom themes. Great for birthday pups, holidays, or just because!",
+			"Celebrate milestones with props, costumes or a theme of your choice. Popular for birthdays, holidays or simply treating your pup.",
 	},
 ];
 
 export default function Services() {
 	return (
-		<div
-			className="w-full bg-colorThree py-12 px-6 lg:px-20 space-y-16"
-			id="services"
-		>
-			<motion.h2
-				initial={{ opacity: 0, y: -30 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-				className="text-4xl font-bold text-center mb-6 font-greatVibes text-colorOne"
-			>
-				Picture-Perfect Packages for Every Pup!
-			</motion.h2>
-
-			{services.map((service, index) => (
-				<motion.div
-					key={index}
-					initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 1, delay: index * 0.2 }}
+		<div className="w-full bg-colorThree py-16 px-6 lg:px-12" id="services">
+			<div className="max-w-5xl mx-auto">
+				<motion.h1
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
-					className={`flex flex-col lg:flex-row ${
-						index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-					} items-center gap-10`}
+					className="text-3xl lg:text-4xl font-serif font-semibold text-colorOne text-center mb-4"
 				>
-					{/* Image */}
-					<div className="lg:w-1/2 w-full">
-						<img
-							src={service.image}
-							alt={service.title}
-							className="w-full h-auto object-cover rounded-2xl shadow-shadow-elegant border-2 border-colorFive/30"
-						/>
-					</div>
+					Session packages
+				</motion.h1>
+				<motion.p
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.6, delay: 0.1 }}
+					viewport={{ once: true }}
+					className="text-center text-colorOne/80 font-sans text-lg mb-14 max-w-2xl mx-auto"
+				>
+					Choose a package that suits your dog and your style. All sessions include
+					edited high-resolution images.
+				</motion.p>
 
-					{/* Text */}
-					<div className="lg:w-1/2 w-full text-colorFour">
-						<h3 className="text-2xl lg:text-3xl font-bold mb-4 font-sans">
-							{service.title}
-						</h3>
-						<p className="text-lg lg:text-xl mb-4 font-mono text-colorOne">
-							{service.description}
-						</p>
-						<p className="text-xl font-semibold font-serif text-colorFour">
-							{service.price}
-						</p>
-					</div>
-				</motion.div>
-			))}
+				<div className="space-y-16">
+					{services.map((service, index) => (
+						<motion.article
+							key={service.title}
+							initial={{ opacity: 0, x: index % 2 === 0 ? -24 : 24 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.6, delay: 0.1 }}
+							viewport={{ once: true }}
+							className={`flex flex-col lg:flex-row gap-10 lg:gap-14 items-center ${
+								index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+							}`}
+						>
+							<div className="lg:w-1/2 w-full flex-shrink-0">
+								<img
+									src={service.image}
+									alt={service.title}
+									className="w-full h-auto object-cover rounded-2xl shadow-shadow-card border border-colorFive"
+								/>
+							</div>
+							<div className="lg:w-1/2 w-full">
+								<h2 className="text-xl lg:text-2xl font-serif font-semibold text-colorOne mb-3">
+									{service.title}
+								</h2>
+								<p className="text-base lg:text-lg font-sans text-colorOne leading-relaxed mb-4">
+									{service.description}
+								</p>
+								<p className="text-lg font-semibold font-sans text-colorFour">
+									{service.price}
+								</p>
+							</div>
+						</motion.article>
+					))}
+				</div>
+			</div>
 		</div>
 	);
 }
